@@ -1,0 +1,56 @@
+{
+  "version": "1.0",
+  "package_version": "2026-03-30T21:04:14.049Z",
+  "settings": {
+    "cache_size_gb": 5,
+    "poll_interval_sec": 300,
+    "health_report_url": "",
+    "analytics_webhook": ""
+  },
+  "assets": [
+    {
+      "id": "picture1",
+      "type": "image",
+      "url": "https://raw.githubusercontent.com/rupesh2k/DigitalSignageContent/main/your-new-holidays-and-observances-design.png",
+      "cached": true
+    },
+    {
+      "id": "picture2",
+      "type": "image",
+      "url": "https://raw.githubusercontent.com/rupesh2k/DigitalSignageContent/main/your-new-seasonal-promotions-design.png",
+      "cached": true
+    },
+    {
+      "id": "video1",
+      "type": "video",
+      "url": "https://raw.githubusercontent.com/rupesh2k/DigitalSignageContent/main/your-new-shopping-design.mp4",
+      "cached": true
+    }
+  ],
+  "schedule": [
+    {
+      "time_range": [
+        "00:00",
+        "23:59"
+      ],
+      "playlist": [
+        "picture1",
+        "picture2",
+        "video1"
+      ],
+      "durations_sec": [
+        30,
+        30,
+        40
+      ],
+      "transition": {
+        "type": "crossfade",
+        "duration_ms": 300
+      }
+    }
+  ],
+  "fallback": {
+    "asset_id": "picture1",
+    "message": "Offline - Showing Cached Content"
+  }
+}
